@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.springframework.org/security/tags"
+      layout:decorator="~{layout.html}">
+<body>
+<div layout:fragment="mainContent">
+    <h1>Spring security with databse test</h1>
+    <a href="#" th:href="@{/secured}">Go to secured area</a>
+</div>
+</body>
+</html>

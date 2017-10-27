@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'din-next';
+    src: url('din-next-font.otf')
+}
+.line {
+    clear:both;
+    border-bottom: solid 1px black;
+    margin-top: 15px;
+}
+.break {
+    margin-top: 50px;
+}
