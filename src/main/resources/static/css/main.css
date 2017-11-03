@@ -4,12 +4,9 @@
 }
 .line {
     clear:both;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px white;
     margin-top: 15px;
 }
 .break {
     margin-top: 50px;
-}
-body{
-    margin: 0 auto;
 }

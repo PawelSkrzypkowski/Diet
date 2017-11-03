@@ -1,12 +1,15 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       xmlns:sec="http://www.springframework.org/security/tags"
-      layout:decorate="layout">
+      layout:decorator="layout">
 <body>
-    <div layout:fragment="mainContent">
+<div layout:fragment="mainContent">
         <h1>Registration form</h1>
         <form action="#" method="post" th:action="@{/register}" th:object="${user}">
-            <input th:field="*{firstName}" placeholder="First Name" /><br />
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">First Name</span>
+                <input type="text" class="form-control" th:field="*{firstName}" placeholder="First Name" aria-describedby="basic-addon1">
+            </div>
             <input th:field="*{lastName}" placeholder="Last Name" /><br />
             <p th:errors="*{email}">Email errors</p>
             <input th:field="*{email}" type="email" placeholder="Email" /><br />
@@ -14,6 +17,6 @@
             <input th:field="*{password}" type="password" placeholder="Password" /><br />
             <input type="submit" value="Register" />
         </form>
-    </div>
+</div>
 </body>
 </html>

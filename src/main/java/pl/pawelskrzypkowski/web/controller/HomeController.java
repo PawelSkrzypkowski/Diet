@@ -15,10 +15,9 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("/secured")
-    @ResponseBody
+    @RequestMapping("/home")
     public String secured() {
-        return "registerSuccess";
+        return "home";
     }
 
 }
